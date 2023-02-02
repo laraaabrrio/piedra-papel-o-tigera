@@ -30,6 +30,9 @@ radio.onReceivedNumber(function (receivedNumber) {
             `)
     }
 })
+function ganador (núm: number) {
+	
+}
 input.onButtonPressed(Button.A, function () {
     basic.showLeds(`
         # # . . #
@@ -38,8 +41,8 @@ input.onButtonPressed(Button.A, function () {
         # # . # .
         # # . . #
         `)
-    radio.sendNumber(111)
-    enviado = 1
+    radio.sendNumber(3)
+    enviado = 3
 })
 input.onButtonPressed(Button.AB, function () {
     basic.showLeds(`
@@ -49,8 +52,8 @@ input.onButtonPressed(Button.AB, function () {
         # # # # #
         # # # # #
         `)
-    radio.sendNumber(333)
-    enviado = 1
+    radio.sendNumber(2)
+    enviado = 2
 })
 input.onButtonPressed(Button.B, function () {
     basic.showLeds(`
@@ -60,7 +63,7 @@ input.onButtonPressed(Button.B, function () {
         # # # # #
         . # # # .
         `)
-    radio.sendNumber(222)
+    radio.sendNumber(1)
     enviado = 1
 })
 let enviado = 0
